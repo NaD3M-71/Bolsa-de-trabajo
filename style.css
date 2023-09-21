@@ -1,0 +1,102 @@
+*{
+    scroll-behavior: smooth;
+    background-color: aqua;
+
+}
+body{
+    height: auto;
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    width: auto;
+    background-color: red;
+}
+
+.botonera{
+    margin: 1px;
+}
+/* index */
+section{
+    display: flex;
+}
+h1{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.aside{
+    width: 20%;
+    height: 600px;
+    background-color: red;
+}
+.index{
+    width: 60%;
+    height: 800px;
+}
+/* inicio Ofrecer-servicio.php */
+.container-service{
+    display: block;
+    margin: auto;
+    width: 500px;
+    background-color: #039084;
+    padding: 20px;
+}
+.formulario{
+    background-color: #039084;
+}
+.titulo{
+    text-align: center;
+    background-color: #039084;
+}
+
+/* fin Ofrecer-servicio.php */
+
+/* Inicio servicios.php */
+
+.container-servicios{
+    width: 95%;
+    height: auto;
+    background-color: #039084;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicio{
+    width: 30%;
+    height: 250px;
+    background-color: #039084;
+    background-color: #6ac3bc;
+    margin: 10px;
+}
+.servicio h3{
+    background-color: #6ac3bc;
+    text-align: center;
+}
+.categorias,.categorias li,.categorias h6,.categorias li a{
+    background-color: #0000;
+}
+.categorias h6{
+    text-align: center;
+    text-decoration: underline;
+}
+.categorias li{
+    background-color: #0000;
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid purple;
+}
+.categorias li a{
+    background-color: #0000;
+    text-decoration: none;
+}
+/* Fin servicios.php */
+
