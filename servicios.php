@@ -1,3 +1,6 @@
+<?php
+include('componentes/conexion-db.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,21 +23,28 @@
     <section>
         <aside class="aside">
             <ul class="categorias list-group">
-                <h6 class="mt-2">Categorias</h6>
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=docencia">Docencia</a></li>
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=atencion">Atencion al cliente</a></li>
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=mecanica">Rubro automotor</a></li>
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=informatica">informatica y tecnologia</a></li>
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=otro">Otros</a></li>
+                <?php
+                    echo '<h6 class="mt-2">Categorias</h6>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=docencia&page=">Docencia</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=atencion&page=">Atencion al cliente</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=mecanica&page=">Rubro automotor</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=informatica&page=">informatica y tecnologia</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=otro&page=">Otros</a></li>';
 
-                <li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=all">Todos</a></li>
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=all&page=">Todos</a></li>';
+                ?>
+                
 
             </ul>
         </aside>
         <div class="container container-servicios">
             <?php
-                include('componentes/servicio.php')
+                include('componentes/servicio.php');
+                include('componentes/paginas.php')
+                
+                
             ?>
+            
         </div>
     </section>
     <footer>

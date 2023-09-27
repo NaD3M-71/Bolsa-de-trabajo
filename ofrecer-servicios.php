@@ -19,6 +19,16 @@
     </header>
     <section>
         <div class="container-service">
+            <?php
+                if(isset($_GET['ok_bd'])){
+                    echo '
+                    <div class="formulario-enviado">
+                        <h4> Tu formulario fue enviado correctamente</h4>
+                    </div>
+                    
+                    ';
+                }
+            ?>
             <!-- Formulario -->
             <?php 
                 include('componentes/formulario-servicio.php')
