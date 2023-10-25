@@ -32,9 +32,11 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php
@@ -60,9 +62,38 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
+                        </p>
+                        </div>
+                        <?php
+                    
+                }}
+            ;
+            break;
+        case 'turismo':
+            $idServicio1 = mysqli_query($datos_bd, "SELECT * FROM servicios WHERE rubro='turismo'");
+            if (is_numeric($pagina))
+            $inicio= (($pagina-1)*$registros);
+            else
+            $inicio=0;
+            $idServicio = mysqli_query($datos_bd, "SELECT * FROM servicios WHERE rubro= 'turismo' LIMIT $inicio,$registros");
+            $registros_x_rubro=mysqli_num_rows($idServicio1);
+            $paginas=ceil($registros_x_rubro/$registros);
+                if (mysqli_num_rows($idServicio)>=1) {
+                    while ($resultado = mysqli_fetch_assoc($idServicio))  {
+                        ?> 
+                        <div class="servicio">
+                            <h3>Trabajo #<?php echo $resultado['id']?></h3>
+                        <p>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php
@@ -87,9 +118,11 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php
@@ -115,9 +148,11 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php
@@ -141,9 +176,11 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php
@@ -168,9 +205,11 @@ if(isset($_GET["rubro"])){
                         <div class="servicio">
                             <h3>Trabajo #<?php echo $resultado['id']?></h3>
                         <p>
-                            nombre: <?php echo $resultado['nombre-apellido']?> <br>
-                            trabajo: <?php echo $resultado['servicio']?> <br>
-                            contacto: <?php echo $resultado['numero']?>
+                            Nombre: <?php echo $resultado['nombre-apellido']?> <br>
+                            Trabajo: <?php echo $resultado['servicio']?> <br>
+                            Contacto: <br>
+                                Telefono:<?php echo $resultado['numero']?><br>
+                                Email: <?php echo $resultado['email']?>
                         </p>
                         </div>
                         <?php

@@ -1,103 +1,222 @@
-*{
-    scroll-behavior: smooth;
-    background-color: aqua;
-
+* {
+  scroll-behavior: smooth;
 }
-body{
-    height: auto;
-    width: 1200px;
-    margin: auto;
+html {
+  min-height: 100%;
+  position: relative;
 }
-
-header{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.logo{
-    width: auto;
-    background-color: red;
+body {
+  height: auto;
+  width: 1200px;
+  margin: auto;
+  background-image: url(imagenes/ciruelos.jpeg);
+  background-position: 100% -200px;
+  background-size: 100%;
+  margin-bottom: 40px;
 }
 
-.botonera{
-    margin: 1px;
+header {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+.logo {
+  width: auto;
+}
+
+.botonera {
+  margin: 1px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* index */
-section{
-    display: flex;
+section {
+  display: flex;
+  padding-top: 15px;
 }
-h1{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+h1 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
-.aside{
-    width: 20%;
-    height: 600px;
-    background-color: red;
+.aside {
+  width: 20%;
+
+  background-color: rgb(255, 174, 0);
+  padding: 8px;
 }
-.index{
-    width: 60%;
-    height: 800px;
+.index {
+  width: 100%;
+  height: 600px;
+  /* background-image: url(imagenes/Esquelcerro21-panchi.jpg); */
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
+.subtitulo-inicio {
+  background: #00ffff00;
+  text-align: center;
+}
+.opcion1-inicio,
+.opcion2-inicio {
+  background: #00ffff3d;
+  font-size: 18px;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+  border: solid 5px #000;
+  margin-bottom: 5px;
+}
+.op1-titulo-subtitulo {
+  background-color: #0000;
+}
+.opcion1-inicio h3 {
+  background-color: #0000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.opcion1-inicio h5 {
+  background: #00ffff00;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 10px;
+}
+.opcion1-inicio .op1-texto {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+.opcion1-inicio .op1-texto p {
+  background: #00ffffaa;
+  padding: 15px;
+  width: 300px;
+  text-align: justify;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.opcion1-inicio .op1-texto :nth-child(odd) {
+  border: solid 3px #000;
+  border-radius: 30px;
+}
+.opcion1-inicio .op2-texto {
+  display: flex;
+
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+}
+.opcion1-inicio .op1-texto :nth-child(2) {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  background: #0000;
+}
+.opcion1-inicio .op2-texto {
+  border-radius: 20px;
+}
+.opcion1-inicio .op2-texto p {
+  background: #00ffffaa;
+  padding: 15px;
+  width: 300px;
+  margin-top: 10px;
+  border: solid 3px #000;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ahfbajsfbasf */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* inicio Ofrecer-servicio.php */
-.container-service{
-    display: block;
-    margin: auto;
-    width: 500px;
-    background-color: #039084;
-    padding: 20px;
+.container-service {
+  display: block;
+  margin: auto;
+  width: 500px;
+  background-color: #039084;
+  padding: 20px;
 }
-.formulario{
-    background-color: #039084;
+.formulario {
+  background-color: #039084;
 }
-.titulo{
-    text-align: center;
-    background-color: #039084;
+.titulo {
+  text-align: center;
+  background-color: #039084;
 }
 
 /* fin Ofrecer-servicio.php */
-
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Inicio servicios.php */
 
-.container-servicios{
-    width: 95%;
-    height: auto;
-    background-color: #039084;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.container-servicios {
+  width: 95%;
+  height: auto;
+  background-color: #03908485;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.servicio{
-    width: 30%;
-    height: 250px;
-    background-color: #039084;
-    background-color: #6ac3bc;
-    margin: 10px;
+.servicio {
+  width: 30%;
+  height: 250px;
+  background-color: #6ac3bc;
+  margin: 10px;
+  padding: 10px;
 }
-.servicio h3{
-    background-color: #6ac3bc;
-    text-align: center;
+.servicio h3 {
+  background-color: #6ac3bc;
+  text-align: center;
 }
-.categorias,.categorias li,.categorias h6,.categorias li a{
-    background-color: #0000;
+.categorias,
+.categorias li,
+.categorias h6,
+.categorias li a {
+  background-color: #0000;
 }
-.categorias h6{
-    text-align: center;
-    text-decoration: underline;
+.categorias h6 {
+  text-align: center;
+  text-decoration: underline;
 }
-.categorias li{
-    background-color: #0000;
-    text-decoration: none;
-    list-style: none;
-    border: 2px solid purple;
+.categorias li {
+  background-color: #0000;
+  text-decoration: none;
+  list-style: none;
+  border: 2px solid purple;
 }
-.categorias li a{
-    background-color: #0000;
-    text-decoration: none;
-    color: #000
+.categorias li a {
+  background-color: #0000;
+  text-decoration: none;
+  color: #000;
 }
 /* Fin servicios.php */
 
+/* inicio paginacion */
+
+.paginacion {
+  background-color: #0000;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+}
+.footer p {
+  color: #fff;
+  font-size: 10px;
+}

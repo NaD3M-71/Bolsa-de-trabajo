@@ -17,19 +17,39 @@
             include('componentes/botonera.php')
         ?>
     </header>
-    <h1>Bolsa de trabajo - Esquel</h1>
+    <h1 class="h1 mb-0">Bolsa de trabajo <br> Esquel</h1>
     <section>
-        <aside class="aside">
-            
-        </aside>
         <div class="index container">
-            
+            <div class="floater"></div>
+            <div class="opcion1-inicio d-flex">
+                <div class="op1-titulo-subtitulo">
+                    <h3>Encontrá empleo</h3>
+                    <h5>Tenes dos opciones</h5>
+                </div>
+                <div class="op1-texto">
+                    <p >Publicá tu oficio/profesión, u ofrece tus servicios</p>
+                    <p >Ó</p>
+                    <p >Postulate para una vacante de empleo</p>
+                </div>
+                
+            </div>
+            <div class="opcion1-inicio d-flex">
+                <div class="op1-titulo-subtitulo">
+                    <h3>Contratá</h3>
+                </div>
+                <div class="op2-texto">
+                    <p >Abrí una vacante</p>
+                    <p >Revisá las postulaciones</p>
+                    <p >Contratá</p>
+                </div>
+                
+            </div>
         </div>
         
     </section>
     
-    <footer>
-
-    </footer>
+    <?php
+        include('componentes/footer.php')
+    ?>
 </body>
 </html>

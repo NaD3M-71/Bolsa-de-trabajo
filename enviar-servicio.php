@@ -8,6 +8,6 @@
 
     include('componentes/conexion-db.php');
     mysqli_query($datos_bd,"INSERT INTO servicios VALUES(DEFAULT,'$nombrecompleto','$telefono','$email','$servicio','$rubro')");
-    header('Location: ofrecer-servicios.php?ok_bd');
+    header('Location: ofrecer-solicitud.php?ok_bd');
 
 ?>

@@ -26,9 +26,10 @@ include('componentes/conexion-db.php');
                 <?php
                     echo '<h6 class="mt-2">Categorias</h6>';
                     echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=docencia&page=">Docencia</a></li>';
-                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=atencion&page=">Atencion al cliente</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=atencion&page=">Atención al cliente</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=turismo&page=">Turismo</a></li>';
                     echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=mecanica&page=">Rubro automotor</a></li>';
-                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=informatica&page=">informatica y tecnologia</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=informatica&page=">Informatica y Tecnologia</a></li>';
                     echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=otro&page=">Otros</a></li>';
 
                     echo '<li class="list-group-item list-group-item-action "><a href="servicios.php?rubro=all&page=">Todos</a></li>';
@@ -47,8 +48,8 @@ include('componentes/conexion-db.php');
             
         </div>
     </section>
-    <footer>
-
-    </footer>
+    <?php
+        include('componentes/footer.php')
+    ?>
 </body>
 </html>

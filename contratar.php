@@ -18,29 +18,35 @@
         ?>
     </header>
     <section>
-        <div class="container container-servicios">
-                <div class="servicio">
-                    <h3>Solicitud 1</h3>
-                    <p>
-                        nombre: pedro <br>
-                        solicito: herrero <br>
-                        contacto: 0303456
-                    </p>
-                </div>
-                <div class="servicio">
-                    <h3>Solicitud 2</h3>
-                    
-                </div>
-                <div class="servicio">
-                <h3>Solicitud 3</h3>
-                </div>
-                <div class="servicio">
-                <h3>Solicitud 4</h3>
-                </div>
-            </div>
-    </section>
-    <footer>
+        <aside class="aside">
+            <ul class="categorias list-group">
+                <?php
+                    echo '<h6 class="mt-2">Categorias</h6>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=docencia&page=">Docencia</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=atencion&page=">Atención al cliente</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=turismo&page=">Turismo</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=mecanica&page=">Rubro automotor</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=informatica&page=">Informática y Tecnología</a></li>';
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=otro&page=">Otros</a></li>';
 
-    </footer>
+                    echo '<li class="list-group-item list-group-item-action "><a href="contratar.php?rubro=all&page=">Todos</a></li>';
+                ?>
+                
+
+            </ul>
+        </aside>
+        <div class="container container-servicios">
+            <?php
+                include('componentes/solicitud.php');
+                include('componentes/paginas.php')
+                
+                
+            ?>
+            
+        </div>
+    </section>
+    <?php
+        include('componentes/footer.php')
+    ?>
 </body>
 </html>

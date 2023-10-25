@@ -31,7 +31,7 @@
             ?>
             <!-- Formulario -->
             <?php 
-                include('componentes/formulario-servicio.php')
+                include('componentes/formulario-solicitud.php')
             ?>
             <!-- Fin formulario -->
         </div>

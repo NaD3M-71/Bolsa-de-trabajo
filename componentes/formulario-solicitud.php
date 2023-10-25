@@ -1,5 +1,5 @@
-<form class="formulario" action="enviar-servicio.php" method="POST" >
-                <h3 class="titulo">Ingrese sus Datos para incluir su Servicio</h3>
+<form class="formulario" action="enviar-solicitud.php" method="POST" >
+                <h3 class="titulo">Ingrese sus Datos para incluir su solicitud</h3>
                 <input 
                     class="form-control mb-2" 
                     name="nombre" 
@@ -34,9 +34,8 @@
                 </select>
                 <textarea 
                     class="form-control mb-2" 
-                    name="servicio" 
-                    id="" 
-                    placeholder="Ingresa una breve descripción del servicio"
+                    name="solicitud" 
+                    placeholder="Ingresa una breve descripción de la solicitud"
                     required></textarea>
                 <input class="form-control mb-2" type="submit" value="Enviar">
                 
