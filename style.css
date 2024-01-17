@@ -220,3 +220,18 @@ h1 {
   color: #fff;
   font-size: 10px;
 }
+
+/* ADMIN */
+
+.form-admin{
+  max-width: 400px;
+
+}
+
+.inicio-admin{
+  background: #dddd;
+}
+
+.img-usuario{
+  max-width: 250px;
+}

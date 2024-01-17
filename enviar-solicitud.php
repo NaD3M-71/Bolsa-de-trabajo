@@ -7,7 +7,8 @@
     $rubro= $_POST['rubro'];
 
     include('componentes/conexion-db.php');
-    mysqli_query($datos_bd,"INSERT INTO solicitudes VALUES(DEFAULT,'$nombrecompleto','$telefono','$email','$solicitud','$rubro')");
+    mysqli_query($datos_bd,"INSERT INTO solicitudes VALUES(DEFAULT,'$nombrecompleto','$telefono','$email','$solicitud','$rubro',0)");
     header('Location: ofrecer-servicios.php?ok_bd');
 
 ?>
+
