@@ -13,7 +13,7 @@ Futuras ideas:
   -Agregar sistema de usuarios:
       -- que el usuario pueda subir hasta 3 servicios y crear hasta 3 contratos.
       -- que el usuario reciba mensajes del administrador si su servicio no cumple con ciertas reglas o no esta en el rubro adecuado
-      -- que el usuario reciba los mensajes a travez de la plataforma.
+      -- que el usuario reciba los mensajes a traves de la plataforma.
   - Mejoras del Front-end:
       -- Mejoras en el apartado Inicio
       -- Mejoras en la vista de los servicios + Vista por Servicio.
